@@ -60,26 +60,7 @@
 	
 	<div id="page">
 
-		<nav class="gtco-nav" role="navigation">
-			<div class="gtco-container">
-				
-				<div class="row">
-					<div class="col-sm-2 col-xs-12">
-						<div id="gtco-logo"><a href="index.html"><img src="images/logo.png" alt="Free HTML5 Website Template by FreeHTML5.co"></a></div>
-					</div>
-					<div class="col-xs-10 text-right menu-1">
-						<ul>
-							<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="about.html">About</a></li>
-						
-							<li><a href="portfolio.html">Demo</a></li>
-							
-						</ul>
-					</div>
-				</div>
-				
-			</div>
-		</nav>
+		
 
 		<header id="gtco-header" class="gtco-cover" role="banner">
 			<div class="gtco-container">
@@ -93,16 +74,13 @@
 									</div>
 									<div class="col-md-7 copy animate-box">
 										<h1>NFL Twitter Net</h1>
-										<p >An Artificial Neural Network that uses both NFL statistics as well as tweets from fans to predict NFL game outcomes. </p>
+										<h2 >An Artificial Neural Network that uses both NFL statistics as well as tweets from fans to predict NFL game outcomes. </h2>
 										<p>Created for an EECS 396 intro to Deep Learning final project at Northwestern University.</p>
 										<p>Developers: Kobe Mandell, and Charlie Stanier </p>
 										<p>Contact Info: charlesstanier2021@u.northwestern.edu</p>
 										<p>Instructor: Brian Pardo </p>
 									</div>
 								</div>
-								<div class="row">
-									<p>Test</p>
-							</div>
 							</div>
 						</div>
 					</div>
@@ -116,13 +94,7 @@
 
 		<div class="gtco-services gtco-section">
 			<div class="gtco-container">
-				<div class="row row-pb-sm">
-					<div class="col-md-8 col-md-offset-2 gtco-heading text-center">
-						<h2>Listen</h2>
-						<p>See examples of Auto-Tunes in Action</p>
-						<p><a href="portfolio.html" class="btn btn-special">Visit the Demo</a></p>
-					</div>
-				</div>
+			
 				<div class="row row-pb-md">
 					<div class="col-md-4 col-sm-4 service-wrap">
 						<div class="service">
@@ -133,7 +105,7 @@
 					<div class="col-md-4 col-sm-4 service-wrap">
 						<div class="service">
 							<h3><i class="ti-settings"></i> Technical Overview</h3>
-							<p>Our research combines two previous predictive models into one. We started with an artificial neural network specifically designed to use NFL team statistics to predict game outcomes, using the same statistics and network structure. We then used tweets from a different model to create two new features for our network; tweet rate, which was a borrowed metric from the twitter model that measured the change in total tweets about a team week to week, and crowd sentiment, our very own metric which used the average polarity (positive or negative attitude) of all fan tweets about a given team each week to create a single score.
+							<p>Our research combines two previous predictive models into one. We started with an artificial neural network specifically designed to use NFL team statistics to predict game outcomes, using the same statistics and network structure. We then used tweets from a different model to create two new features for our network; tweet rate, which was a borrowed metric from the twitter model that measured the change in total tweets about a team week to week, and crowd sentiment, our own metric which used the average polarity (positive or negative attitude) of all fan tweets about a given team each week to create a unified score.
 							</p>
 						</div>
 					</div>
@@ -144,37 +116,17 @@
 						</div>
 					</div>
 
-
-
-					<div class="row row-pb-md">
-					<div class="col-md-4 col-sm-4 service-wrap">
-						<div class="service">
-							<h3><i class="ti-comments"></i> Testing</h3>
-							<p>To test the data, we used the MIR-QBSH dataset, which was created by J Stephen Downey.  This dataset had both positives and negatives for us. It was good because it was a large dataset of many normal people trying to hum melodies. This allowed us to see what would happen when someone did not quite hit the right pitch as well as tuning different parts of our code to humans humming. The negative was that the humming would not start immediately when the recording started but the ground truth midi file did.  This meant that the notes of our midi representation and the ground truth representation did not line up.</p>
-						</div>
+					<div class="row row-pb-sm">
+					<div class="col-md-8 col-md-offset-2 gtco-heading text-center">
+						<h2>Results</h2>
+						<p>See how our models performed</p>
+						<p><a href="portfolio.html" class="btn btn-special">Visit the Demo</a></p>
 					</div>
-					<div class="col-md-4 col-sm-4 service-wrap">
-						<div class="service ">
-							<h3><i class="ti-pie-chart"></i> Results</h3>
-							<p>When we ran our algorithm over the entire dataset we achieved 14% accuracy, but when we ran the data on individual audio files and were able to line up the audio by hand the accuracy ranged from 25-40%. Additionally when listening back to the midi files our function created, there were always errors, but the melody was always easy to distinguish. If we had more time to work on the project we could more accurately test the data by either creating our own dataset or altering the dataset that we used to have the melody begin at the beginning of the wave file for every recording.
-							</p>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-4 service-wrap">
-						<div class="service">
-							<h3><i class="ti-ruler-pencil"></i> Resources</h3>
-							<ul>
-								<li>MIR-QBSH (our dataset) </li>
-								<li>Librosa (for pitch tracking and onset/offset) </li>
-								<li>Numpy (for arrays) </li>
-							</ul>
-						</div>
-					</div>
-
-
-					<div class="clearfix visible-md-block visible-sm-block"></div>
-
 				</div>
+
+
+
+					
 			</div>
 		</div>
 		<!-- END .gtco-services -->
@@ -188,9 +140,13 @@
 		<footer id="gtco-footer" class="gtco-section" role="contentinfo">
 			<div class="gtco-container">
 				<div class="row row-pb-md">
-					<div class="col-md-8 col-md-offset-2 gtco-cta text-center">
-						<h3>Try it yourself</h3>
-						<p><a href="https://github.com/aleonardi33/EECS352_STATM" class="btn btn-white btn-outline">Link to our Github</a></p>
+					<div class="col-md-4 col-md-offset-1  gtco-cta text-center">
+						<h3>Explore the Model</h3>
+						<p><a href="https://github.com/Deep-Learners-of-Tomorrow/Predicting-NFL-Games-Using-Twitter" class="btn btn-white btn-outline">Link to our Github</a></p>
+					</div>
+					<div class="col-md-4 col-md-offset-1 gtco-cta text-center">
+						<h3>Want to Learn More</h3>
+						<p><a href="https://github.com/aleonardi33/EECS352_STATM" class="btn btn-white btn-outline">Link to our Paper</a></p>
 					</div>
 				</div>
 				
